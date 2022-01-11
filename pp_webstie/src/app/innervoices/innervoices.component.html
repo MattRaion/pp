@@ -1,0 +1,72 @@
+<div class="iv-banner">
+  <app-nav></app-nav>
+  <div class="scroll-down">
+    <div (click)="scroll()" style="border-bottom: 1px solid #707070;padding-left: 35px;padding-right: 21px;">{{scrollDown}}
+    </div>
+  </div>
+</div>
+
+<div class="game-details">
+  <div class="centered-container" >
+    <div class="game-details-images" id ="images-game-det-iv">
+      <div class="game-details-images-image">
+        <img class="image" width="200px" height="250px" src="../../assets/innervoices.png">
+      </div>
+      <div class="game-details-images-image">
+        <img class="image" width="200px" height="250px" src="../../assets/inner-voices/iv1.png">
+      </div>
+      <div class="game-details-images-image">
+        <img class="image" width="200px" height="250px" src="../../assets/inner-voices/iv2.png">
+      </div>
+
+    </div>
+
+    <div class="game-details-container">
+
+      <div class="game-tech-dets">
+        <div class="game-det-column-1">
+          <div class="game-det-title">
+            {{developer}}
+          </div>
+          <div class="game-det-desc">
+            PunkPirates
+          </div>
+          <div class="game-det-title">
+            {{publisher}}
+          </div>
+          <div class="game-det-desc">
+            PunkPirates
+          </div>
+          <div class="game-det-title">
+            {{platform}}
+          </div>
+          <div class="game-det-desc">
+            <a href="https://store.steampowered.com/app/1351220/Escape_Room_VR_Inner_Voices/" target="_blank"><img width="80px"
+                height="45px" src="../../assets/vive_logo.png"></a>
+          </div>
+          <div class="game-det-title">
+            {{releaseDate}}
+          </div>
+          <div class="game-det-desc">
+            {{release}}
+          </div>
+        </div>
+      </div>
+      <div class="game-det-column-2">
+        <div class="game-title">Escape Room VR:<br /> Inner Voices</div>
+        <div class="game-subtitle" style="max-width: 400px;">{{desc2}}</div>
+        <div class="game-desc">{{desc}}
+
+        </div>
+      </div>
+    </div>
+    <div class="game-movie">
+      <iframe width="100%" height="450px" src="https://www.youtube.com/embed/XyKKsEPwCrM" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+
+<app-ourgames [displayButton]="false"></app-ourgames>

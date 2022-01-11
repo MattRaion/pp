@@ -1,0 +1,23 @@
+<nav class="nav">
+  <a routerLink="/"><div class="logo">
+  </div></a>
+  <div class="socials">
+    <a href="https://www.linkedin.com/company/punkpirates/about/" target="_blank"><img class="socials-img" src="../../assets/li.png"></a>
+    <a href="https://www.facebook.com/punkpiratesvr/" target="_blank"><img class="socials-img" src="../../assets/fb.png"></a>
+    <a href="https://discord.com/invite/DQa2m45" target="_blank"><img class="socials-img" src="../../assets/discor.png"></a>
+    <a href="https://www.youtube.com/channel/UCwXSCAdVf6Nz2m87m-tBmfQ" target="_blank"><img class="socials-img" src="../../assets/yt.png"></a>
+  </div>
+  <div class="navigation">
+    <div class="navlink"><a routerLink="/">Start</a></div>
+    <div class="navlink"><a routerLink="/games">{{games}}</a></div>
+    <div class="navlink"><a routerLink="/contact">{{contact}}</a></div>
+    <div class="navlink"><a routerLink="/careers">{{careers}}</a></div>
+   <div class="navlink"><a routerLink="/investorRelation">{{investorRelation}}</a></div>
+<!--  <div class="navlink"><a href="https://punkpirates.io/investor_relations/index.html" target="_blank">{{investorRelation}}</a></div>-->
+  <div class="navlink2" > <img class="lang" (click)="change('1')" height="15px" src="../../assets/pl.png" style="margin-right: 20px;"> <img class="lang" (click)="change('0')"  height="15px" src="../../assets/en.png"> </div>
+    <div class="hamburger">
+    <a routerLink="/menu"> <img width="35px" height="35px" style="fill:white" src="../../assets/menu.svg"></a>
+    </div>
+    
+  </div>
+   </nav>

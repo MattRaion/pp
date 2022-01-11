@@ -1,0 +1,116 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+    font-family: Poppins;
+    min-height: 500px;
+    max-width: 100%;
+    color: white;
+}
+
+@media(max-width: 1454px){
+    .about {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 885px) 
+{
+.about  {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+}
+
+
+.about .about-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media(max-width: 1454px){
+    .about .about-content {
+    align-items: center;
+    width: 70%;
+}
+}
+@media (max-width: 885px) 
+{
+.about .about-content {
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+}
+
+.about .about-img {
+    min-width: 600px;
+    min-height: 500px;
+    background-image: url("../../assets/vr.png");
+    background-size: cover;
+}
+
+
+
+@media (max-width: 1200px) 
+{
+.about .about-img {
+    display: none;
+}
+}
+
+@media(max-width: 885px){
+    .about .about-img {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 40px;
+}
+}
+
+.about-content-desc {
+    font-weight: 400;
+    padding-left: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.about-content-title { 
+    font-size: 30px;
+    padding-left: 28px;
+    padding-bottom: 80px;
+    padding-top: 40px;
+
+    background-position: center left top ;
+    background-size: fit;
+    background-repeat: no-repeat;
+}
+
+.about-content-article {
+    margin-top: 20px;
+    background: black;
+    border-radius: 15px;
+    padding: 30px 30px 30px 30px;
+    font-size: 15px;
+    color: white
+}
+
+@media(max-width: 885px){
+
+    .about-content-desc {
+        padding-left: 0px;
+
+    }
+
+    .about-content-title {
+        padding-left: 0px;
+        background-image: none;
+    }
+}

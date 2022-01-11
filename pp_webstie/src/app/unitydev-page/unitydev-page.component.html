@@ -1,0 +1,50 @@
+<app-banner2 [motto]="'Senior Unity Developer'"></app-banner2>
+<div class="unityDev-content">
+<div class="unity-dev-main-content">
+  <div class="unity-dev-comp-desc" id="banner2scrollTarget">
+{{desc}}
+
+  </div>
+  <div class="unity-dev-job-desc">
+
+
+    {{desc2}}<br/><br /><br /><br />
+    
+    <span class="job-paragraph-title"><b>{{respTitle}}</b><br /><br /></span>
+    
+   {{desc3}}<br /><br />
+    
+    <span class="job-paragraph-title"><b>{{keyReq}}</b><br /><br /></span>
+    
+    <ul >
+    <li *ngFor="let keyReqItem of keyreqList;">{{keyReqItem}}</li>
+    </ul>
+    <br /><br />
+    <span class="job-paragraph-title"><b>{{unityReq}}</b><br /><br /></span>
+    <ul>
+    <li *ngFor="let unityReqListItem of unityReqList;">{{unityReqListItem}}</li>
+    </ul>
+    <br /><br />
+    <span class="job-paragraph-title"><b>{{offer}}</b><br /><br /></span>
+    
+    <ul>
+    <li *ngFor="let offerListItem of offerList;">{{offerListItem}}</li>
+    </ul>
+    <br /><br />
+
+    <div class="job-location-details">
+      <b>{{department}}</b> Development<br/>
+      <b>{{location}}</b> {{location2}}<br/>
+    </div>
+  </div>
+  <div class="send-us-cv">
+    <div class="cv-left">
+      <span class="job-paragraph-title"><b>{{sendCv}}</b><br /></span>
+      <b>{{address}}</b> hello@punkpirates.com
+    </div>
+    <a href="mailto:hello@punkpirates.com"><div class="cv-right">
+      {{sendMessage}}
+    </div></a>
+</div>
+</div>
+</div>

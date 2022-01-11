@@ -1,0 +1,19 @@
+<div class="contact-main">
+  <div class="contact-main-title">
+    <b>{{title1}}</b> {{title2}}
+  </div>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
+  
+  <div class="contact-main-form">
+    <div class="contact-left">
+      <input class="contact-form-small-input" type="text" placeholder="{{name}}" formControlName="name"> <br/>
+      <input class="contact-form-small-input" type="text" placeholder="{{email}}" formControlName="email"> <br/>
+      <input class="contact-form-small-input" type="text" placeholder="{{subject}}" formControlName="subject">
+    </div>
+    <div class="contact-right">
+      <textarea class="contact-form-big-input" placeholder="{{message}}" formControlName="text"></textarea>
+    </div>
+  </div>
+  <div><button class="contact-form-button">{{send}}</button></div>
+</form>
+</div>

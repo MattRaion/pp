@@ -1,0 +1,79 @@
+.careers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Poppins;
+    margin-bottom: 80px;
+}
+
+.careers-desc {
+    max-width: 800px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.careers-title {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.careers-tabs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 920px;
+    justify-content: center;
+    font-family: Poppins;
+}
+
+.careers-tabs-tab{
+    max-width: 380px;
+    min-width: 380px;
+    background-color: #F8F8F8;
+    border-radius: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: flex-start;
+}
+
+.job-location-details {
+    color: black;
+}
+
+@media(max-width:380px)
+{
+    .careers-tabs-tab{
+    min-width: 300px;
+}}
+
+.careers-tab-content{
+    margin-left: 20px;
+    color: black;
+}
+
+.careers-tab-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+}
+
+.careers-tab-title-desc {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.careers-tab-title {
+    font-size: 20px;
+    font-weight: 900;
+}

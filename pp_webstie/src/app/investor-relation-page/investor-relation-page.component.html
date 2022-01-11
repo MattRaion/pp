@@ -1,0 +1,115 @@
+<div class="investor-relation">
+  <div class="investor-navbar">
+<app-nav></app-nav>
+  </div>
+
+<div class="investor-relation-nav">
+<div class="investor-nav-link">
+  <a routerLink="/investorRelation/quotes">Notowania</a>
+</div>
+<div class="investor-nav-link">
+  <a routerLink="/investorRelation/company">Spółka</a>
+</div>
+<div class="investor-nav-link">
+  <a routerLink="/investorRelation/management">Zarząd</a>
+</div>
+<div class="investor-nav-link">
+  <a routerLink="/investorRelation/boardOfDirectors">Rada nadzorcza</a>
+</div>
+<div class="investor-nav-link">
+  <a routerLink="/investorRelation/shareholding">Akcjonariat</a>
+</div>
+<div class="investor-nav-link">
+  <a routerLink="/investorRelation/investorscontact">Kontakt dla inwestorów</a>
+</div>
+<div class="investor-nav-link">
+  <a routerLink="/investorRelation/financialData">Dane finansowe</a>
+</div>
+<div class="investor-nav-link">
+  <a routerLink="/investorRelation/documents">Dokumenty korporacyjne</a>
+</div>
+<div class="investor-nav-link">
+  <a routerLink="/investorRelation/calendarium">Kalendarium</a>
+</div>
+<div class="investor-nav-link">
+  <a routerLink="/investorRelation/generalMeeting">Walne zgromadzenia</a>
+</div>
+<div class="investor-nav-link">
+  <a href="http://biznes.pap.pl/pl/reports/espi/company/335,2020,0,0,1" target="_blank"> Raporty </a>
+</div>
+<div class="investor-nav-link">
+  <a routerLink="/investorRelation/presentation">Prezentacja</a>
+</div>
+<!--<div class="investor-nav-link">
+  <a routerLink="/investorRelation/group">Grupa PunkPirates</a>
+</div>-->
+
+
+<div class="dropdown">
+  <div class="dropbtn" (click)="dropdown()"><div>{{selection}}</div><div [ngClass]=" displayDropdown === true ? 'transformed':'arrow'"   style="position: absolute; right: 25px; top: -6px; font-size:22px"><img width="20px;" src="../../assets/arrow-white.png"></div></div>
+  <div class="dropdown-content" [ngClass]=" displayDropdown === true ? 'dropdown-contentVisible':'dropdown-contentHidden'">
+    <a routerLink="/investorRelation/quotes">
+    <div class="investor-nav-link2" (click)="select('Notowania')">
+      Notowania
+    </div></a>
+    <a routerLink="/investorRelation/company">
+    <div class="investor-nav-link2" (click)="select('Spółka')">
+      Spółka
+    </div>
+    </a>
+    <a routerLink="/investorRelation/management">
+    <div class="investor-nav-link2" (click)="select('Zarząd')">
+      Zarząd
+    </div></a>
+
+    <a routerLink="/investorRelation/boardOfDirectors">
+    <div class="investor-nav-link2" (click)="select('Rada nadzorcza')">
+      Rada nadzorcza
+    </div></a>
+    <a routerLink="/investorRelation/shareholding">
+    <div class="investor-nav-link2" (click)="select('Akcjonariat')">
+      Akcjonariat
+    </div></a>
+    <a routerLink="/investorRelation/investorscontact">
+    <div class="investor-nav-link2" (click)="select('Kontakt dla inwestorów')">
+     Kontakt dla inwestorów
+    </div></a>
+    <a routerLink="/investorRelation/financialData">
+    <div class="investor-nav-link2" (click)="select('Dane finansowe')">
+      Dane finansowe
+    </div></a>
+    <a routerLink="/investorRelation/documents">
+    <div class="investor-nav-link2" (click)="select('Dokumenty korporacyjne')">
+      Dokumenty korporacyjne
+    </div></a>
+    <a routerLink="/investorRelation/calendarium">
+    <div class="investor-nav-link2" (click)="select('Kalendarium')">
+      Kalendarium
+    </div></a>
+    <a routerLink="/investorRelation/generalMeeting">
+    <div class="investor-nav-link2" (click)="select('Walne zgromadzenia')">
+      Walne zgromadzenia
+    </div></a>
+    <a href="http://biznes.pap.pl/pl/reports/espi/company/335,2020,0,0,1" target="_blank">
+    <div class="investor-nav-link2">
+       Raporty
+    </div></a>
+    <a routerLink="/investorRelation/presentation" (click)="select('Prezentacja')">
+    <div class="investor-nav-link2">
+      Prezentacja
+    </div></a>
+    <a routerLink="/investorRelation/group">
+    <div class="investor-nav-link2" (click)="select('Grupa PunkPirates')">
+      Grupa PunkPirates
+    </div></a>
+  </div>
+</div>
+</div>
+
+<div class="router-investor-container">
+  <router-outlet></router-outlet>
+</div>
+
+</div>
+
+

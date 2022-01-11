@@ -1,0 +1,199 @@
+<div class="company">
+  <div class="company-title"><b>Kalendarium</b></div>
+  <div class="company-content">
+    <table class="financialData">
+      <tr class="marked" (click)="setActive(1)">
+        <td><div class="title-td">2020<div [ngClass]="active === 1 ? 'transformed' : 'no'" class="arrow"><img width="20px;" src="../../assets/arrow.png"></div></div></td>
+      </tr>
+      <tr>
+        <td [ngClass]="active === 1 ? 'noncollapsed' : 'collapsed'">
+          <div class="financial-content">
+              <div class="date-text">23 MARCA 2020</div>
+            <div class="financial-text">Nadzwyczajne Walne Zgromadzenie IQ Partners S.A.</div>
+          </div>
+
+          <div class="financial-content">
+            <div class="date-text">17 KWIETNIA 2020</div>
+            <div class="financial-text">Publikacja jednostkowego i skonsolidowanego raportu rocznego za 2019 rok</div>
+          </div>
+
+          <div class="financial-content">
+            <div class="date-text">15 MAJA 2020</div>
+            <div class="financial-text">Publikacja skonsolidowanego raportu kwartalnego za I kwartał 2020 roku</div>
+          </div>
+
+          <div class="financial-content">
+            <div class="date-text">18 CZERWCA 2020</div>
+            <div class="financial-text">Zwyczajne Walne Zgromadzenie IQ Partners S.A.</div>
+          </div>
+
+          <div class="financial-content">
+            <div class="date-text">18 WRZEŚNIA 2020</div>
+            <div class="financial-text">Publikacja skonsolidowanego raportu za I półrocze 2020 roku</div>
+          </div>
+
+          <div class="financial-content">
+            <div class="date-text">13 LISTOPADA 2020</div>
+            <div class="financial-text">Publikacja skonsolidowanego raportu kwartalnego za III kwartał 2020 roku</div>
+          </div>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td (click)="setActive(2)"><div class="title-td">2019<div [ngClass]="active === 2 ? 'transformed' : 'no'" class="arrow"><img width="20px;" src="../../assets/arrow.png"></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td [ngClass]="active === 2 ? 'noncollapsed' : 'collapsed'">
+<div class="financial-content">
+  <div class="date-text">31 STYCZNIA 2019</div>
+  <div class="financial-text">Nadzwyczajne Walne Zgromadzenie IQ Partners S.A.</div>
+</div>
+
+<div class="financial-content">
+  <div class="date-text">10 KWIETNIA 2019</div>
+  <div class="financial-text">Publikacja jednostkowego i skonsolidowanego raportu rocznego za 2018 rok</div>
+</div>
+
+<div class="financial-content">
+  <div class="date-text">15 MAJA 2019</div>
+  <div class="financial-text">Publikacja skonsolidowanego raportu kwartalnego za I kwartał 2019 roku</div>
+</div>
+
+<div class="financial-content">
+  <div class="date-text">18 CZERWCA 2019</div>
+  <div class="financial-text">Zwyczajne Walne Zgromadzenie IQ Partners S.A.</div>
+</div>
+
+<div class="financial-content">
+  <div class="date-text">18 WRZEŚNIA 2019</div>
+  <div class="financial-text">Publikacja skonsolidowanego raportu za I półrocze 2019 roku</div>
+</div>
+
+<div class="financial-content">
+  <div class="date-text">15 LISTOPADA 2019</div>
+  <div class="financial-text">Publikacja skonsolidowanego raportu kwartalnego za III kwartał 2019 roku</div>
+</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td (click)="setActive(3)" class="marked"><div class="title-td">2018<div [ngClass]="active === 3 ? 'transformed' : 'no'" class="arrow"><img width="20px;" src="../../assets/arrow.png"></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td [ngClass]="active === 3 ? 'noncollapsed' : 'collapsed'">
+        <div class="financial-content">
+          <div class="date-text">10 KWIETNIA 2018</div>
+          <div class="financial-text">Publikacja jednostkowego i skonsolidowanego raportu rocznego za 2017 rok</div>
+        </div>
+        
+        <div class="financial-content">
+          <div class="date-text">15 MAJA 2018</div>
+          <div class="financial-text">Publikacja rozszerzonego raportu kwartalnego za I kwartał 2018 roku</div>
+        </div>
+        
+        <div class="financial-content">
+          <div class="date-text">14 WRZEŚNIA 2018</div>
+          <div class="financial-text">Publikacja skonsolidowanego rozszerzonego raportu za I półrocze 2018 roku</div>
+        </div>
+        
+        <div class="financial-content">
+          <div class="date-text">15 LISTOPADA 2018</div>
+          <div class="financial-text">Publikacja rozszerzonego raportu kwartalnego za III kwartał 2018 roku</div>
+        </div>
+        
+        </td>
+      </tr>
+
+      <tr>
+        <td (click)="setActive(4)"><div class="title-td">2017<div [ngClass]="active === 4 ? 'transformed' : 'no'" class="arrow"><img width="20px;" src="../../assets/arrow.png"></div>
+        </div></td>
+      </tr>
+
+      <tr>
+        <td [ngClass]="active === 4 ? 'noncollapsed' : 'collapsed'">
+      <div class="financial-content">
+        <div class="date-text">10 KWIETNIA 2017</div>
+        <div class="financial-text">Publikacja jednostkowego i skonsolidowanego raportu rocznego za 2016 rok</div>
+      </div>
+      
+      <div class="financial-content">
+        <div class="date-text">15 MAJA 2017</div>
+        <div class="financial-text">Publikacja rozszerzonego raportu kwartalnego za I kwartał 2017 roku</div>
+      </div>
+      
+      <div class="financial-content">
+        <div class="date-text">15 WRZEŚNIA 2017</div>
+        <div class="financial-text">Publikacja skonsolidowanego rozszerzonego raportu za I półrocze 2017 roku</div>
+      </div>
+      
+      <div class="financial-content">
+        <div class="date-text">15 LISTOPADA 2017</div>
+        <div class="financial-text">Publikacja rozszerzonego raportu kwartalnego za III kwartał 2017 roku</div>
+      </div>
+        </td>
+      </tr>
+      <tr>
+        <td (click)="setActive(5)" class="marked"><div class="title-td">2016<div [ngClass]="active === 5 ? 'transformed' : 'no'" class="arrow"><img width="20px;" src="../../assets/arrow.png"></div>
+        </div></td>
+      </tr>
+
+      <tr>
+        <td [ngClass]="active === 5 ? 'noncollapsed' : 'collapsed'">
+              <div class="financial-content">
+                <div class="date-text">18 MARCA 2016</div>
+                <div class="financial-text">Publikacja jednostkowego i skonsolidowanego raportu rocznego za 2015 rok</div>
+              </div>
+              
+              <div class="financial-content">
+                <div class="date-text">13 MAJA 2016</div>
+                <div class="financial-text">Publikacja rozszerzonego raportu kwartalnego za I kwartał 2016 roku</div>
+              </div>
+              
+              <div class="financial-content">
+                <div class="date-text">30 SIERPNIA 2016</div>
+                <div class="financial-text">Publikacja skonsolidowanego rozszerzonego raportu za I półrocze 2016 roku</div>
+              </div>
+              
+              <div class="financial-content">
+                <div class="date-text">14 LISTOPADA 2016</div>
+                <div class="financial-text">Publikacja rozszerzonego raportu kwartalnego za III kwartał 2016 roku</div>
+              </div>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td (click)="setActive(6)" ><div class="title-td">2015<div [ngClass]="active === 6 ? 'transformed' : 'no'" class="arrow"><img width="20px;" src="../../assets/arrow.png"></div>
+        </div></td>
+      </tr>
+      
+      <tr>
+        <td [ngClass]="active === 6 ? 'noncollapsed' : 'collapsed'">
+          <div class="financial-content">
+            <div class="date-text">19 MARCA 2015</div>
+            <div class="financial-text">Publikacja jednostkowego i skonsolidowanego raportu rocznego za 2014 rok</div>
+          </div>
+      
+          <div class="financial-content">
+            <div class="date-text">14 MAJA 2015</div>
+            <div class="financial-text">Publikacja rozszerzonego raportu kwartalnego za I kwartał 2015 roku</div>
+          </div>
+      
+          <div class="financial-content">
+            <div class="date-text">28 SIERPNIA 2015</div>
+            <div class="financial-text">Publikacja skonsolidowanego rozszerzonego raportu za I półrocze 2015 roku</div>
+          </div>
+      
+          <div class="financial-content">
+            <div class="date-text">13 LISTOPADA 2015</div>
+            <div class="financial-text">Publikacja rozszerzonego raportu kwartalnego za III kwartał 2015 roku</div>
+          </div>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</div>

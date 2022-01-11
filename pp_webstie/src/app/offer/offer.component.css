@@ -1,0 +1,36 @@
+.offer {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding-top: 3%;
+    font-family: Poppins;
+    justify-content: center;
+    text-align: center;
+
+    flex-wrap: wrap;
+}
+
+.offer-tab
+{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 30px;  
+    margin-left: 80px;
+    margin-right: 80px; 
+}
+
+.offer-tab-image {
+    width: 236px;
+}
+.offer-tab-title {
+    width: 236px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.offer-tab-desc {
+    width: 236px;
+    font-size: 12px;
+}

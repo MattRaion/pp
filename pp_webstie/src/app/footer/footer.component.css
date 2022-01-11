@@ -1,0 +1,149 @@
+.footer {
+    max-width: 100%;
+    min-height: 180px;
+    font-family:  Poppins;
+    display: flex;
+    padding-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 841px)
+{
+    .footer{
+    flex-direction: column;
+    text-align: left;
+    justify-content: baseline;
+    align-items: baseline;
+    padding-left: 80px;;
+    }
+}
+
+.footer-link:hover {
+    transform: scale(1.1);
+}
+
+
+.footer .logo {
+    margin-bottom: 15px;
+    min-width: 149px;
+    min-height: 80px;
+    background-image: url("../../assets/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.socials-img {
+    margin-right: 23px;
+}
+
+.footer-socials{
+    text-align: left;
+}
+
+.logo-text {
+    margin-bottom: 15px;
+    max-width: 209px;
+    text-align: left;
+    color: #636363;
+    font-family: Poppins;
+    font-size:10px;
+}
+
+
+
+.footer-1 {
+    margin-left: 10px;
+}
+
+@media (max-width: 841px)
+{
+    .footer-1 {
+    margin-left: 0px;
+    
+}
+}
+
+.footer-2 {
+    margin-left: 100px;
+}
+
+@media (max-width: 841px)
+{
+    .footer-2 {
+    margin-left: 0px;
+    width: 209px;
+    text-align: center;
+    margin-top: 20px;
+}
+}
+
+@media (max-width: 841px)
+{
+    .footer-3 {
+    margin-left: 0px;
+    width: 209px;
+    text-align: center;
+}
+}
+
+
+.footer-link {
+    color: white;
+    font-family: Poppins;
+    margin-bottom: 20px;
+    min-width: 179px;
+    text-align: left;
+    font-size: 13px;;
+}
+
+.footer-4 {
+    margin-left: 100px;
+    color: white;
+    font-family: Poppins;
+    text-align: left;
+}
+
+@media (max-width: 841px){
+    .footer-4{
+        margin-left: 0px;
+        text-align: left;
+    }
+}
+
+.subscribe-form {
+
+    margin-bottom: 20px;
+}
+
+.subscribe-form-input {
+    border: none;
+    border-radius: 11px;
+    color: #636363;
+    font-family: Poppins;
+    height: 40px;
+    max-width: 240px;
+    min-width: 160px;
+    padding-left: 25px;
+}
+
+.footer-button{
+    background-color: #EE3B3E;
+    color: white;
+    font-family: Poppins;
+    border:none;
+    border-radius: 11px;
+    height: 42px;
+    max-width: 120px;
+    min-width: 60px;
+    margin-left: -30px
+}
+
+.copyright {
+    font-size: 11px;
+}
+

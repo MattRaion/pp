@@ -1,0 +1,70 @@
+<div class="deathmanager-banner">
+  <app-nav></app-nav>
+  <div class="scroll-down">
+    <div (click)="scroll()" style="border-bottom: 1px solid #707070;padding-left: 35px;padding-right: 21px;">{{scrollDown}}
+    </div>
+  </div>
+</div>
+
+<div class="game-details">
+ <div class="centered-container">
+<!--    <div class="game-details-images" id="images-game-det-deathmanager">
+      <div class="game-details-images-image">
+        <img class="image" width="200px" height="250px" src="../../assets/deathManager/1.png">
+      </div>
+      <div class="game-details-images-image">
+        <img class="image" width="200px" height="250px" src="../../assets/deathManager/2.png">
+      </div>
+      <div class="game-details-images-image">
+        <img class="image" width="200px" height="250px" src="../../assets/deathManager/3.png">
+      </div>
+
+    </div>-->
+
+    <div class="game-details-container">
+
+      <div class="game-tech-dets">
+        <div class="game-det-column-1">
+          <div class="game-det-title">
+            {{developer}}
+          </div>
+          <div class="game-det-desc">
+            PunkPirates
+          </div>
+          <div class="game-det-title">
+            {{publisher}}
+          </div>
+          <div class="game-det-desc">
+            PunkPirates
+          </div>
+          <div class="game-det-title">
+            {{platform}}
+          </div>
+          <div class="game-det-desc">
+            <img style="margin-right: 20px;" width="80px" height="45px" src="../../assets/oculusgo.png">
+            <img width="80px" height="45px" src="../../assets/vive_logo.png">
+            <br /> <br />
+            <img width="80px" height="80px" src="../../assets/ps_transp.png" style="padding-right: 20px;">
+            <img width="80px" height="80px" src="../../assets/steam-logo-black-transparent.png">
+          </div>
+          <div class="game-det-title">
+            {{releaseDate}}
+          </div>
+          <div class="game-det-desc">
+            Q4 2021
+          </div>
+        </div>
+      </div>
+      <div class="game-det-column-2">
+        <div class="game-title">Death Manager VR</div>
+        <div class="game-desc">{{desc}} <br/><br/> {{desc2}}
+      </div>
+      </div>
+    </div>
+    <div class="game-movie" style="display: none;">
+    </div>
+  </div>
+</div>
+
+
+<app-ourgames [displayButton]="false"></app-ourgames>

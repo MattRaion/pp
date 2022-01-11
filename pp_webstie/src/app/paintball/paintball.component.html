@@ -1,0 +1,59 @@
+<div class="vrstories-banner">
+  <app-nav></app-nav>
+  <div class="scroll-down">
+    <div (click)="scroll()" style="border-bottom: 1px solid #707070;padding-left: 35px;padding-right: 21px;">scroll down
+    </div>
+  </div>
+</div>
+
+<div class="game-details">
+  <div class="centered-container">
+   
+
+    <div class="game-details-container">
+
+      <div class="game-tech-dets">
+        <div class="game-det-column-1">
+          <div class="game-det-title">
+            {{developer}}
+          </div>
+          <div class="game-det-desc">
+            PunkPirates
+          </div>
+          <div class="game-det-title">
+            {{publisher}}
+          </div>
+          <div class="game-det-desc">
+            PunkPirates
+          </div>
+          <div class="game-det-title">
+            {{platform}}
+          </div>
+          <div class="game-det-desc" style="padding-top: 5px;">
+            <img
+                style="margin-right: 20px;" width="80px" height="45px" src="../../assets/oculusgo.png">
+        <img width="80px" height="45px" src="../../assets/vive_logo.png">
+        <br/> <br/>
+        <img width="80px" height="80px" src="../../assets/ps_transp.png" style="padding-right: 20px;"> 
+        <img width="80px" height="80px" src="../../assets/steam-logo-black-transparent.png">
+          </div>
+          <div class="game-det-title">
+            {{releaseDate}}
+          </div>
+          <div class="game-det-desc">
+            {{release}}
+          </div>
+        </div>
+      </div>
+      <div class="game-det-column-2">
+        <div class="game-title">Community Paintball VR</div>
+        <div class="game-desc">{{desc}} <br/><br/> {{desc1}} <br/><br/> {{desc2}}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<app-ourgames [displayButton]="false"></app-ourgames>

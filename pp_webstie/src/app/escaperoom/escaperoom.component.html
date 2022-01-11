@@ -1,0 +1,64 @@
+<div class="escaperoom-banner">
+  <app-nav></app-nav>
+  <div class="scroll-down">
+    <div (click)="scroll()" style="border-bottom: 1px solid #707070;padding-left: 35px;padding-right: 21px;">{{scrollDown}}
+    </div>
+  </div>
+</div>
+
+<div class="game-details">
+  <div class="centered-container">
+    <div class="game-details-images" id="images-game-det-eascaperoom">
+      <div class="game-details-images-image">
+        <img class="image" width="300px" height="250px" src="../../assets/escaperoom/1.png">
+      </div>
+      <div class="game-details-images-image">
+        <img class="image" width="300px" height="250px" src="../../assets/escaperoom/2.png">
+      </div>
+
+    </div>
+
+    <div class="game-details-container">
+
+      <div class="game-tech-dets">
+        <div class="game-det-column-1">
+          <div class="game-det-title">
+            {{developer}}
+          </div>
+          <div class="game-det-desc">
+            PunkPirates
+          </div>
+          <div class="game-det-title">
+            {{publisher}}
+          </div>
+          <div class="game-det-desc">
+            PunkPirates
+          </div>
+          <div class="game-det-title">
+            {{platform}}
+          </div>
+          <div class="game-det-desc">
+            <a href="https://www.oculus.com/experiences/gear-vr/869694586482674/" target="_blank"><img style="margin-right: 20px;" width="80px" height="45px" src="../../assets/oculusgo.png"></a>
+            <a href="https://www.oculus.com/experiences/gear-vr/869694586482674/" target="_blank"><img width="80px" height="45px" src="../../assets/samsung_gear.png"></a>
+          </div>
+          <div class="game-det-title">
+            {{releaseDate}}
+          </div>
+          <div class="game-det-desc">
+            {{release}}
+          </div>
+        </div>
+      </div>
+      <div class="game-det-column-2">
+        <div class="game-title">Escape Room VR</div>
+        <div class="game-desc">{{desc}}
+        </div>
+      </div>
+    </div>
+    <div class="game-movie" style="display: none;">
+    </div>
+  </div>
+</div>
+
+
+<app-ourgames [displayButton]="false"></app-ourgames>

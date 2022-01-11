@@ -1,0 +1,113 @@
+.banner {
+    background-color: #242424;
+    background-image: url(../../assets/banner_big.png);
+    overflow: hidden;
+    min-height: 900px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.banner-img {
+    max-height: 350px;
+    animation: float2 7s ease-in-out infinite;
+}
+
+.banner .banner-text {
+    color: white;
+    font-family: Poppins;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.scroll-down {
+    color: white;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 40px;
+	animation: float 7s ease-in-out infinite;
+}
+
+.scroll-down:hover {
+    cursor: pointer;
+}
+
+
+.banner .banner-text .art-text {
+    color:#EE3B3E;
+    font-weight: 900;
+}
+
+@media(max-width: 733px)
+{
+    .banner .banner-text{
+        font-size: 20px;
+    }
+}
+
+.about-studio {
+    font-size: 12px;
+    padding:10px 10px 10px 10px;
+    background-color: #EE3B3E;
+    width: 210px;
+    margin-top: 30px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    transition: transform .2s;
+}
+
+@media(max-width: 733px)
+{
+    .about-studio{
+        font-size: 13px;
+        width: 180px;
+        height: 40px;
+    }
+}
+
+.about-studio:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px) rotate(90deg);
+	}
+	50% {
+		transform: translatey(-40px) rotate(90deg);
+	}
+	100% {
+		transform: translatey(0px) rotate(90deg);
+	}
+}
+
+@keyframes float2 {
+	0% {
+		transform: translatey(0px) 
+	}
+	50% {
+		transform: translatey(-40px)
+	}
+	100% {
+		transform: translatey(0px)
+	}
+}
+

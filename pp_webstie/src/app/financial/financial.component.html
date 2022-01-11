@@ -1,0 +1,159 @@
+<div class="company">
+  <div class="company-title">Dane Finansowe</div>
+  <div class="company-content">
+<table class="financialData">
+  <tr class="marked" (click)="setActive(1)"><td><div class="title-td">2019<div [ngClass]="active === 1 ? 'transformed' : 'no'" class="arrow"><img width="20px;" src="../../assets/arrow.png"></div>
+  </div></td></tr>
+  <tr>
+  <td [ngClass]="active === 1 ? 'noncollapsed' : 'collapsed'">
+    <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2019/JRR_2019.pdf" target="_blank">
+        <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+      </a>
+      <div class="financial-text">Raport roczny jednostkowy za rok obrotowy 2019</div>
+    </div>
+    <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2019/Opinia_2019.pdf"
+        target="_blank">
+        <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+      </a>
+      <div class="financial-text">Opinia biegłego do raportu rocznego skonsolidowanego oraz raportu jednostkowego za rok obrotowy 2019</div>
+    </div>
+  </td>
+  </tr>
+
+  
+  <tr>
+    <td (click)="setActive(2)"><div class="title-td">2018<div [ngClass]="active === 2 ? 'transformed' : 'no'" class="arrow"><img width="20px;" src="../../assets/arrow.png"></div>
+    </div></td>
+  </tr>
+  <tr>
+    <td [ngClass]="active === 2 ? 'noncollapsed' : 'collapsed'">
+      <div class="financial-content" >
+        <a href ="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2018/JRR_2018.pdf" target="_blank"><div class="download-icon"><img height="45px" src="../../assets/download.png"></div></a>
+        <div class="financial-text">Raport roczny jednostkowy za rok obrotowy 2018</div>
+      </div>
+      <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2018/SRR_2018.pdf" target="_blank"> <div class="download-icon"><img height="45px" src="../../assets/download.png"></div></a>
+        <div class="financial-text">Raport roczny skonsolidowany za rok obrotowy 2018</div>
+      </div>
+      <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2018/Opinia_Bieglego_Rewidenta_JRR_2018.pdf" target="_blank">  <div class="download-icon"><img height="45px" src="../../assets/download.png"></div></a>
+        <div class="financial-text">Opinia biegłego do raportu rocznego jednostkowego za rok obrotowy 2018</div>
+      </div>
+      <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2018/Opinia_Bieglego_Rewidenta_SRR_2018.pdf" target="_blank"> <div class="download-icon"><img height="45px" src="../../assets/download.png"></div></a>
+        <div class="financial-text">Opinia biegłego do raportu rocznego skonsolidowanego za rok obrotowy 2018</div>
+      </div>
+    </td>
+  </tr>
+  
+  <tr>
+    <td (click)="setActive(3)" class="marked"><div class="title-td">2017<div [ngClass]="active === 3 ? 'transformed' : 'no'" class="arrow"><img width="20px;" src="../../assets/arrow.png"></div>
+    </div></td>
+  </tr>
+  <tr>
+    <td [ngClass]="active === 3 ? 'noncollapsed' : 'collapsed'">
+      <div class="financial-content">
+        <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2017/JRR_2017.pdf" target="_blank">
+          <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+        </a>
+        <div class="financial-text">Raport roczny jednostkowy za rok obrotowy 2017</div>
+      </div>
+      <div class="financial-content">
+        <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2017/SRR_2017.pdf" target="_blank">
+          <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+        </a>
+        <div class="financial-text">Raport roczny skonsolidowany za rok obrotowy 2017</div>
+      </div>
+      <div class="financial-content">
+        <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2017/Opinia_Bieglego_Rewidenta_JRR_2017.pdf"
+          target="_blank">
+          <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+        </a>
+        <div class="financial-text">Opinia biegłego do raportu rocznego jednostkowego za rok obrotowy 2017</div>
+      </div>
+      <div class="financial-content">
+        <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2017/Opinia_Bieglego_Rewidenta_SRR_2017.pdf"
+          target="_blank">
+          <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+        </a>
+        <div class="financial-text">Opinia biegłego do raportu rocznego skonsolidowanego za rok obrotowy 2017</div>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td (click)="setActive(4)"><div class="title-td">2016<div [ngClass]="active === 4 ? 'transformed' : 'no'" class="arrow"><img width="20px;" src="../../assets/arrow.png"></div>
+    </div></td>
+  </tr>
+
+<tr>
+  <td [ngClass]="active === 4 ? 'noncollapsed' : 'collapsed'">
+    <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2016/JRR_2016.pdf" target="_blank">
+        <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+      </a>
+      <div class="financial-text">Raport roczny jednostkowy za rok obrotowy 2016</div>
+    </div>
+    <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2016/SRR_2016.pdf" target="_blank">
+        <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+      </a>
+      <div class="financial-text">Raport roczny skonsolidowany za rok obrotowy 2016</div>
+    </div>
+    <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2016/Opinia_Bieglego_Rewidenta_JRR_2016.pdf"
+        target="_blank">
+        <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+      </a>
+      <div class="financial-text">Opinia biegłego do raportu rocznego jednostkowego za rok obrotowy 2016</div>
+    </div>
+    <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2016/Opinia_Bieglego_Rewidenta_SRR_2016.pdf"
+        target="_blank">
+        <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+      </a>
+      <div class="financial-text">Opinia biegłego do raportu rocznego skonsolidowanego za rok obrotowy 2016</div>
+    </div>
+  </td>
+</tr>
+  <tr>
+    <td (click)="setActive(5)" class="marked"><div class="title-td">2015<div [ngClass]="active === 5 ? 'transformed' : 'no'" class="arrow"><img width="20px;" src="../../assets/arrow.png"></div>
+    </div></td>
+  </tr>
+
+<tr>
+  <td [ngClass]="active === 5 ? 'noncollapsed' : 'collapsed'">
+    <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2015/JRR_2015.pdf" target="_blank">
+        <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+      </a>
+      <div class="financial-text">Raport roczny jednostkowy za rok obrotowy 2015</div>
+    </div>
+    <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2015/SRR_2015.pdf" target="_blank">
+        <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+      </a>
+      <div class="financial-text">Raport roczny skonsolidowany za rok obrotowy 2015</div>
+    </div>
+    <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2015/Opinia_Bieglego_Rewidenta_JRR_2015.pdf"
+        target="_blank">
+        <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+      </a>
+      <div class="financial-text">Opinia biegłego do raportu rocznego jednostkowego za rok obrotowy 2015</div>
+    </div>
+    <div class="financial-content">
+      <a href="https://punkpirates.io/wp-content/uploads/DaneFinansowe/2015/Opinia_Bieglego_Rewidenta_SRR_2015.pdf"
+        target="_blank">
+        <div class="download-icon"><img height="45px" src="../../assets/download.png"></div>
+      </a>
+      <div class="financial-text">Opinia biegłego do raportu rocznego skonsolidowanego za rok obrotowy 2015</div>
+    </div>
+  </td>
+</tr>
+
+</table>
+  </div>
+</div>
